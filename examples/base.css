@@ -1,0 +1,50 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font: 17px sans-serif;  
+}
+
+
+/* 
+RESET
+===================
+*/
+*, *:before, *:after {
+  /* apply a natural box layout model to all elements */
+  box-sizing: border-box; 
+}
+
+/* 
+VARIABLES
+===================
+*/
+:root {
+  /* base colors */
+  --color-alpha: #333333;
+  --color-beta: #ffffff;
+  --color-gamma: #4d4d4d;
+  --color-delta: #5f5f5f;
+  --color-epsilon: #858585;
+  --color-zeta: #a6a6a6;
+  --color-eta: #c7c7c7;
+  --color-theta: #e7e7e7;
+  --color-iota: #f4f4f4;
+
+  --button-transition: all 0s;
+  --button-transition-delay: 300ms;
+}
+
+
+/* 
+Themes demo specific styles
+===================
+*/
+section {
+  float: left;
+  width: 50%;
+  height: 600px;
+  border: solid 1px #eee;
+  border-width: 0 1px 1px 0;
+  background-color: var(--base-color, #f4f4f4);
+}
+
