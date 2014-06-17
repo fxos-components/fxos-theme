@@ -113,7 +113,7 @@ h1,.alpha   {
 	--button-background: var(--color-beta);
 	--button-background-active: var(--color-brand-turquoise);
 	--button-color: var(--color-alpha);
-	--button-color-active: var(--color-brand-yellow);
+	--button-color-active: var(--color-beta);
 
 	--switch-color-checked: var(--color-brand-turquoise);
 	--switch-color: var(--color-zeta);
@@ -124,31 +124,26 @@ h1,.alpha   {
 	--header-background: var(--color-gamma);
 	--header-nav-button-color: 	var(--color-beta);
 	--header-nav-button-color-active: var(--color-beta);
-	--header-button-color: var(--color-brand-alpha);
-	--header-button-color-active: var(--color-brand-alpha);
+	--header-button-color: var(--color-brand-violet);
+	--header-button-color-active: var(--color-beta);
 	--header-title-color: var(--color-beta);
 
 	--button-background: var(--color-delta);
-	--button-background-active: var(--color-brand-blue);
+	--button-background-active: var(--color-brand-violet);
 	--button-color: var(--color-beta);
 	--button-color-active: var(--color-beta);
 	--button-boxshadow: 'none';
 	
 	--switch-color: var(--color-delta);
+	--switch-color-checked: var(--color-brand-violet);
 
 	background: var(--color-alpha);
 }
 
+.theme-media .menu-item {
+	border-bottom: 1px solid var(--color-delta);
+}
 
-/*.theme-media gaia-button {
-	border: var(--color-alpha);
-	border-bottom: 1px solid #292929;
-	color: var(--color-eta);
-}
-.theme-media gaia-button:active {
-	color: var(--color-beta);
-}
-*/
 
 .theme-productivity {
 	--header-background: var(--color-brand-orange);
@@ -167,8 +162,4 @@ h1,.alpha   {
 
 }
 
-/*.theme-comms gaia-header button,
-.theme-comms gaia-header a {
-	border: 1px solid red;
-}*/
 

@@ -13,6 +13,7 @@
   <script src="../bower_components/gaia-header/script.js"></script>
   <script src="../bower_components/gaia-button/script.js"></script>
   <script src="../bower_components/gaia-switch/script.js"></script>
+
 </head>
 
 <body role="application">
@@ -25,20 +26,34 @@
       <button>Done</button>
     </gaia-header>
     
-    <gaia-button>Button</gaia-button>
-    <gaia-button>Button</gaia-button>
+    <div class="grid l-m-small">
+      <gaia-button class="col-1-2">Button 1</gaia-button>
+      <gaia-button class="col-1-2">Button 2</gaia-button>
+    </div>
 
+    <div class="l-mt-small l-mb-small">
       <gaia-textinput placeholder="First Name..." value="" resettable></gaia-textinput>
       <gaia-textinput resettable></gaia-textinput>
       <gaia-textinput type="password" placeholder="Password..."></gaia-textinput>
       <gaia-textinput></gaia-textinput>
-      
-      
-      <gaia-switch checked></gaia-switch>
-      <gaia-switch>Switch Transition</gaia-switch>
-      <gaia-switch checked>Switch Active</gaia-switch>
-      <gaia-switch></gaia-switch>
-    
+    </div>
+
+    <div class="l-mt-small l-mb-small">
+      <ul class="menu">
+        <li class="menu-item">
+          <label for="switch1">Toggle switch</label>
+          <gaia-switch id="switch1" class="l-align-right"></gaia-switch>
+        </li>
+        <li class="menu-item">
+          <label for="switch2">Toggle switch</label>
+          <gaia-switch id="switch2" class="l-align-right"></gaia-switch>
+        </li>
+        <li class="menu-item">
+          <label for="switch3">Toggle switch checked </label>
+          <gaia-switch id="switch3" class="l-align-right" checked></gaia-switch>
+        </li>
+      </ul> 
+    </div>
 
   </section>
 
@@ -47,20 +62,34 @@
       <h1 id="title2">Media</h1>
       <button>Done</button>
     </gaia-header>
-    <div class="content">
-      
-      <gaia-button>Button</gaia-button>
-      <gaia-button>Button</gaia-button>
 
-      <gaia-textinput placeholder="First Name..." resettable></gaia-textinput>
+    <div class="grid l-m-small">
+      <gaia-button class="col-1-2">Button 1</gaia-button>
+      <gaia-button class="col-1-2">Button 2</gaia-button>
+    </div>
+
+    <div class="l-mt-small l-mb-small">
+      <gaia-textinput placeholder="First Name..." value="" resettable></gaia-textinput>
       <gaia-textinput resettable></gaia-textinput>
       <gaia-textinput type="password" placeholder="Password..."></gaia-textinput>
       <gaia-textinput></gaia-textinput>
-      
-      <gaia-switch checked>Switch Off</gaia-switch>
-      <gaia-switch>Switch Transition</gaia-switch>
-      <gaia-switch checked>Switch Active</gaia-switch>
-      <gaia-switch></gaia-switch>
+    </div>
+
+    <div class="l-mt-small l-mb-small">
+      <ul class="menu">
+        <li class="menu-item">
+          <label for="switch1">Toggle switch</label>
+          <gaia-switch id="switch1" class="l-align-right"></gaia-switch>
+        </li>
+        <li class="menu-item">
+          <label for="switch2">Toggle switch</label>
+          <gaia-switch id="switch2" class="l-align-right"></gaia-switch>
+        </li>
+        <li class="menu-item">
+          <label for="switch3">Toggle switch checked </label>
+          <gaia-switch id="switch3" class="l-align-right" checked></gaia-switch>
+        </li>
+      </ul> 
     </div>
   </section>
 
@@ -69,20 +98,33 @@
       <h1 id="title2">Productivity</h1>
       <button>Done</button>
     </gaia-header>
-    <div class="content">
-      <gaia-button>Button</gaia-button>
-      <gaia-button>Button</gaia-button>
+    <div class="grid l-m-small">
+      <gaia-button class="col-1-2">Button 1</gaia-button>
+      <gaia-button class="col-1-2">Button 2</gaia-button>
+    </div>
 
-      
-      <gaia-textinput placeholder="First Name..." resettable></gaia-textinput>
+    <div class="l-mt-small l-mb-small">
+      <gaia-textinput placeholder="First Name..." value="" resettable></gaia-textinput>
       <gaia-textinput resettable></gaia-textinput>
       <gaia-textinput type="password" placeholder="Password..."></gaia-textinput>
       <gaia-textinput></gaia-textinput>
-      
-      <gaia-switch checked>Switch Off</gaia-switch>
-      <gaia-switch>Switch Transition</gaia-switch>
-      <gaia-switch checked>Switch Active</gaia-switch>
-      <gaia-switch></gaia-switch>
+    </div>
+
+    <div class="l-mt-small l-mb-small">
+      <ul class="menu">
+        <li class="menu-item">
+          <label for="switch1">Toggle switch</label>
+          <gaia-switch id="switch1" class="l-align-right"></gaia-switch>
+        </li>
+        <li class="menu-item">
+          <label for="switch2">Toggle switch</label>
+          <gaia-switch id="switch2" class="l-align-right"></gaia-switch>
+        </li>
+        <li class="menu-item">
+          <label for="switch3">Toggle switch checked </label>
+          <gaia-switch id="switch3" class="l-align-right" checked></gaia-switch>
+        </li>
+      </ul> 
     </div>
   </section>
 
@@ -91,19 +133,33 @@
       <h1 id="title2">Default theme</h1>
       <button>Done</button>
     </gaia-header>
-    <div class="content">
-      <gaia-button>Gaia button</gaia-button>
-      
-      <gaia-textinput placeholder="First Name..." resettable></gaia-textinput>
+    <div class="grid l-m-small">
+      <gaia-button class="col-1-2">Button 1</gaia-button>
+      <gaia-button class="col-1-2">Button 2</gaia-button>
+    </div>
+
+    <div class="l-mt-small l-mb-small">
+      <gaia-textinput placeholder="First Name..." value="" resettable></gaia-textinput>
       <gaia-textinput resettable></gaia-textinput>
       <gaia-textinput type="password" placeholder="Password..."></gaia-textinput>
       <gaia-textinput></gaia-textinput>
-      
-      <gaia-switch checked>Switch Off</gaia-switch>
-      <gaia-switch>Switch Transition</gaia-switch>
-      <gaia-switch checked>Switch Active</gaia-switch>
-      <gaia-switch></gaia-switch>
     </div>
-  </section>
+
+    <div class="l-mt-small l-mb-small">
+      <ul class="menu">
+        <li class="menu-item">
+          <label for="switch1">Toggle switch</label>
+          <gaia-switch id="switch1" class="l-align-right"></gaia-switch>
+        </li>
+        <li class="menu-item">
+          <label for="switch2">Toggle switch</label>
+          <gaia-switch id="switch2" class="l-align-right"></gaia-switch>
+        </li>
+        <li class="menu-item">
+          <label for="switch3">Toggle switch checked </label>
+          <gaia-switch id="switch3" class="l-align-right" checked></gaia-switch>
+        </li>
+      </ul> 
+    </div>
 </body>
 </html>
