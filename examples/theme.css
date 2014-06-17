@@ -95,6 +95,9 @@ h1,.alpha   {
 	--button-color-active: var(--color-beta);
 	--button-transition: all 0.2s;
 	--button-boxshadow: inset 0 -1px 0 #d8d8d8, inset 0 1px 0 #eeeeee;
+
+	--switch-color-checked: var(--color-brand-blue);
+	--switch-color: var(--color-zeta);
 }
 
 
@@ -110,7 +113,10 @@ h1,.alpha   {
 	--button-background: var(--color-beta);
 	--button-background-active: var(--color-brand-turquoise);
 	--button-color: var(--color-alpha);
-	--button-color-active: var(--color-beta);
+	--button-color-active: var(--color-brand-yellow);
+
+	--switch-color-checked: var(--color-brand-turquoise);
+	--switch-color: var(--color-zeta);
 }
 
 .theme-media {
@@ -128,6 +134,8 @@ h1,.alpha   {
 	--button-color-active: var(--color-beta);
 	--button-boxshadow: 'none';
 	
+	--switch-color: var(--color-delta);
+
 	background: var(--color-alpha);
 }
 
@@ -154,6 +162,9 @@ h1,.alpha   {
 	--button-background-active: var(--color-brand-orange);
 	--button-color: var(--color-alpha);
 	--button-color-active: var(--color-beta);	
+
+	--switch-color-checked: var(--color-brand-orange);
+
 }
 
 /*.theme-comms gaia-header button,
