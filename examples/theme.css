@@ -98,6 +98,8 @@ h1,.alpha   {
 
 	--switch-color-checked: var(--color-brand-blue);
 	--switch-color: var(--color-zeta);
+
+	--checkbox-color: var(--color-brand-blue);
 }
 
 
@@ -117,6 +119,8 @@ h1,.alpha   {
 
 	--switch-color-checked: var(--color-brand-turquoise);
 	--switch-color: var(--color-zeta);
+
+	--checkbox-color: var(--color-brand-turquoise);
 }
 
 .theme-media {
@@ -125,7 +129,7 @@ h1,.alpha   {
 	--header-nav-button-color: 	var(--color-beta);
 	--header-nav-button-color-active: var(--color-beta);
 	--header-button-color: var(--color-brand-violet);
-	--header-button-color-active: var(--color-beta);
+	--header-button-color-active: var(--color-brand-violet);
 	--header-title-color: var(--color-beta);
 
 	--button-background: var(--color-delta);
@@ -137,6 +141,8 @@ h1,.alpha   {
 	--switch-color: var(--color-delta);
 	--switch-color-checked: var(--color-brand-violet);
 
+	--checkbox-color: var(--color-brand-violet);
+
 	background: var(--color-alpha);
 }
 
@@ -144,6 +150,9 @@ h1,.alpha   {
 	border-bottom: 1px solid var(--color-delta);
 }
 
+.theme-media label {
+	color: #fff;
+}
 
 .theme-productivity {
 	--header-background: var(--color-brand-orange);
@@ -157,6 +166,8 @@ h1,.alpha   {
 	--button-background-active: var(--color-brand-orange);
 	--button-color: var(--color-alpha);
 	--button-color-active: var(--color-beta);	
+
+	--checkbox-color: var(--color-brand-orange);
 
 	--switch-color-checked: var(--color-brand-orange);
 
