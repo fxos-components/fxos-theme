@@ -64,8 +64,23 @@ TYPE
 h1,.alpha   { 
     font-size: 23px;
     line-height: 26px;
-    color: var(--color-root-gamma);
+    color: var(--color-gamma);
     margin: 6px 0 24px 0;
+}
+
+h2,.beta  {
+    font-size: 17px;
+    color: var(--color-gamma);
+    margin: 32px 0 16px 0;
+}
+
+h3,.gamma   { 
+    font-size: 14px;
+    font-style: bold;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: var(--color-gamma);
+    margin: 32px 0 16px 0;
 }
 
 :root {
@@ -145,13 +160,14 @@ h1,.alpha   {
 
 	background: var(--color-alpha);
 }
-
 .theme-media .menu-item {
-	border-bottom: 1px solid var(--color-delta);
+	border-bottom: 1px solid var(--color-gamma);
 }
-
 .theme-media label {
-	color: #fff;
+	color: var(--color-beta);
+}
+.theme-media h3 {
+	color: var(--color-eta);	
 }
 
 .theme-productivity {

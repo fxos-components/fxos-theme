@@ -96,7 +96,6 @@ ALIGNMENT
 .l-align-center {
     text-align: center;
 }
-
 .l-width-full {
     width: 100%;
 }
@@ -124,6 +123,7 @@ MARGINS & PADDING
 .l-p-small {
   padding: 14px;
 }
+
 /*
 MENU
 =================
@@ -146,6 +146,20 @@ MENU
 .menu-item:last-child {
     border-bottom: none;
 }
+
+
+/*
+HELPERS
+=================
+*/
+
+.l-clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 
 /* 
 Themes demo specific styles
