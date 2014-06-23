@@ -139,9 +139,10 @@ THEME VARIABLES
 .theme-productivity {
 	--header-background: var(--color-brand-orange);
 	--header-nav-button-color: 	var(--color-beta);
-	--header-nav-button-color-active: 	var(--color-beta);
+	--header-nav-button-color-active: 	rgba(255,255,255,0.2);
 	--header-button-color: var(--color-beta);
-	--header-button-color-active: var(--color-beta);
+    --header-button-color-active: rgba(255,255,255,0.2);
+    --header-button-background: transparent;
 	--header-title-color: var(--color-beta);
 
 	--button-background: var(--color-beta);
@@ -157,10 +158,12 @@ THEME VARIABLES
 	/* variables */
 	--header-background: var(--color-iota);
 	--header-nav-button-color: 	var(--color-alpha);
-	--header-nav-button-color-active: var(--color-alpha);
+	--header-nav-button-color-active: rgba(51,51,51,0.2);
 	--header-button-color: var(--color-brand-blue);
-	--header-button-color-active: var(--color-brand-blue);
+    --header-button-background: transparent;
+	--header-button-color-active: rgba(0,202,242,0.2);
 	--header-title-color: var(--color-alpha);
+    
 
 	--button-background-active: var(--color-brand-blue);
 	--button-color-active: var(--color-beta);
