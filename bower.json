@@ -19,5 +19,8 @@
     "gaia-button": "gaia-components/gaia-button",
     "gaia-switch": "gaia-components/gaia-switch",
     "gaia-checkbox": "gaia-components/gaia-checkbox"
+  },
+  "dependencies": {
+    "gaia-subheader": "gaia-components/gaia-subheader#~0.1.1"
   }
 }
