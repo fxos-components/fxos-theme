@@ -47,6 +47,10 @@ VARIABLES
   --color-iota: #f4f4f4;
   --button-transition: all 0s;
   --button-transition-delay: 300ms;
+
+  --dim-micro: 6px;
+  --dim-small: 14px;
+  --dim-mega: 60px;
 }
 
 /*
@@ -80,25 +84,33 @@ LAYOUT
 .l-text-align-left { text-align: left; }
 .l-text-align-right { text-align: right; }
 .l-text-valign-top { vertical-align: top; }
-
 .l-width-full {
     width: 100%;
 }
+
+/* flexbox */
+/* flex-item */
+.l-flex-grow { flex-grow: 1; }
+
 /* margin-top */
-.l-mt-small { margin-top: 14px; }
+.l-mt-small { margin-top: var(--dim-small); }
 /* margin-bottom */
-.l-mb-small { margin-bottom: 14px; }
+.l-mb-small { margin-bottom: var(--dim-small); }
 .l-mb-med {}
 .l-mb-large {}
-.l-mb-mega { margin-bottom: 60px; }
+.l-mb-mega { margin-bottom: var(--dim-mega); }
 /* margin-left */
-.l-ml-small { margin-left: 14px; }
+.l-ml-small { margin-left: var(--dim-small); }
 /* margin-right */
-.l-mr-small { margin-right: 14px; }
+.l-mr-small { margin-right: var(--dim-small); }
 /* margin */
-.l-m-small { margin: 14px; }
+.l-m-small { margin: var(--dim-small); }
 /* paddig */
-.l-p-small { padding: 14px; }
+.l-p-small { padding: var(--dim-small); }
+.l-pl-small { padding-left: var(--dim-small); }
+.l-pr-small { padding-right: var(--dim-small); }
+.l-pt-micro { padding-top: var(--dim-micro); }
+.l-pb-micro { padding-bottom: var(--dim-micro); }
 
 
 /* helpers */

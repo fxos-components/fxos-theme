@@ -82,7 +82,10 @@ THEME VARIABLES
 
 .theme-communications .tabs-is-selected {
     color:  var(--color-brand-turquoise);
-    border-bottom: 3px solid var(--color-brand-turquoise);
+}
+
+.theme-communications .tabs-item:after {
+    background: var(--color-brand-turquoise);
 }
 
 
@@ -112,6 +115,9 @@ THEME VARIABLES
 	border-bottom: 1px solid var(--color-gamma);
 	color: var(--color-beta)
 }
+.theme-media .menu-item:after {
+    background: var(--color-gamma);
+}
 .theme-media label {
 	color: inherit;
 }
@@ -125,16 +131,16 @@ THEME VARIABLES
 .theme-media .tabs-item {
     color: var(--color-beta);
 }
-.theme-media .tabs-item:active {
-    background: #242424;
-}
 .theme-media .tabs-is-selected {
     color: var(--color-brand-alpha);
-    border-bottom: 3px solid var(--color-brand-alpha);
 }
 .theme-media .tabs-is-selected:active {
     background: transparent;
 }
+.theme-media .tabs-item:after {
+    background: var(--color-brand-blue);
+}
+
 
 .theme-productivity {
 	--header-background: var(--color-brand-orange);
@@ -280,6 +286,7 @@ h6,.zeta    { }
 em {
     font-weight: normal;
 }
+
 /*
 MODULES
 =================
@@ -290,21 +297,62 @@ MODULES
     margin: 0;
     width: 100%;
 }
-
 .menu-item {
-    box-sizing:border-box;
+    box-sizing: border-box;
     list-style: none;
     border-bottom: 1px solid var(--color-theta);
     padding: var(--dim-small) var(--dim-small);
     color: var(--color-gamma);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
-.menu-item:active {
+.menu-item-selected { 
+    /* for animated click effect */
+    content: " ";
+    position: absolute;
+    border-radius: 50%;
+    transform-origin: center center;
     background: var(--color-theta);
+    transform: scaleX(0);
+    z-index: -1;   
 }
+.menu-item-animate {
+    animation-name: grow;
+    animation-duration: 800ms;
+    animation-iteration: 1;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;   
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+}
+
 .menu-item:last-child {
     border-bottom: none;
 }
-
+.menu-item-icon {
+    font-size: 30px;
+    margin: -10px var(--dim-small) -10px 0;
+}
 
 /*
 STATES
