@@ -16,16 +16,16 @@ RESET
 }
 
 * { 
-  font-weight: normal;
-  line-height: 19px;
-  font-size: 17px;
-  color: var(--color-epsilon);
 }
 
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  color: var(--color-epsilon);
+  font-weight: normal;
+  line-height: 19px;
+  font-size: 17px;
 }
 
 
