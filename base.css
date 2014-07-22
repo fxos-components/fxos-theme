@@ -15,7 +15,7 @@ Base styles
 }
 
 * { 
-    font-family: "FiraSans"; 
+  font-family: "FiraSans"; 
 }
 
 html, body {
@@ -173,6 +173,9 @@ hr {
 }
 .l-inline-block {
   display: inline-block;
+}
+.is-hidden {
+  display: none!important;
 }
 
 

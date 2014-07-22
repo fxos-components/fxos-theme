@@ -101,33 +101,6 @@ Gaia theme variables
   --checkbox-color: var(--color-brand-turquoise);
 }
 
-.theme-media {
-  /* generic styles */
-	--highlight-color: var(--color-brand-blue);
-
-  /* module styles */
-	--header-background: var(--color-gamma);
-	--header-nav-button-color: 	var(--color-beta);
-  --header-nav-button-color-active:  rgba(255,255,255,0.2);
-	--header-button-color: var(--color-brand-blue);
-	--header-button-color-active: rgba(0,170,197,0.3);
-  --header-button-background: transparent;
-	--header-title-color: var(--color-beta);
-    
-	--button-background: var(--color-delta);
-	--button-background-active: var(--color-brand-blue);
-	--button-color: var(--color-beta);
-	--button-color-active: var(--color-beta);
-	--button-boxshadow: 'none';
-	
-  --switch-color: var(--color-delta);
-  --switch-color-checked: var(--color-brand-blue);
-
-  /* container styles  */
-  color: var(--color-eta);
-	background: var(--color-alpha);
-}
-
 .theme-settings {
   /* generic styles */
   --highlight-color: var(--color-brand-blue);
@@ -149,4 +122,86 @@ Gaia theme variables
   background: var(--color-iota);
 }
 
+
+.theme-media {
+  /* generic styles */
+  --highlight-color: var(--color-brand-blue);
+
+  /* module styles */
+  --header-background: var(--color-gamma);
+  --header-nav-button-color:  var(--color-beta);
+  --header-nav-button-color-active:  rgba(255,255,255,0.2);
+  --header-button-color: var(--color-brand-blue);
+  --header-button-color-active: rgba(0,170,197,0.3);
+  --header-button-background: transparent;
+  --header-title-color: var(--color-beta);
+    
+  --button-background: var(--color-delta);
+  --button-background-active: var(--color-brand-blue);
+  --button-color: var(--color-beta);
+  --button-color-active: var(--color-beta);
+  --button-boxshadow: 'none';
+  
+  --switch-color: var(--color-delta);
+  --switch-color-checked: var(--color-brand-blue);
+
+  /* container styles  */
+  color: var(--color-eta);
+  background: var(--color-alpha);
+}
+
+/* overrides */
+.theme-media h1, .theme-media .alpha,
+.theme-media h2, .theme-media .beta,
+.theme-media h3, .theme-media .gamma {
+    color: #fff;
+}
+.theme-media .subheader-link-label {
+    color: var(--highlight-color);
+}
+.theme-media .subheader-line {
+    background: var(--color-gamma);
+}
+.theme-media .menu-item {
+  color: var(--color-eta)
+}
+.theme-media .menu-item a {
+    color: inherit;
+}
+.theme-media .menu-item:after {
+    background: var(--color-gamma);
+}
+.theme-media .menu-item-selected { 
+    background: var(--color-gamma);
+}
+.theme-media .input-container {
+    border-color: var(--color-gamma);
+}
+.theme-media .input {
+    background: var(--color-alpha);
+}
+.theme-media .input:focus {
+    background: var(--color-gamma);
+}
+.theme-media .input-range-track {
+    background: var(--color-gamma);
+}
+.theme-media .input-range-range {
+    background: var(--highlight-color);
+}
+.theme-media .input-range-handle {
+    background: var(--color-alpha);    
+}
+.theme-media .input-range-handle:active {
+    background:var(--color-gamma);
+}
+.theme-media .tabs {
+    border-top-color: var(--color-gamma);
+}
+.theme-media .dialogue-container {
+    background: rgba(51,51,51,0.85);
+}
+.theme-media .dialogue {
+    color: var(--color-epsilon);
+}
 
