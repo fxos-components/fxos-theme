@@ -6,16 +6,16 @@ Base styles
 */
 
 
-/* 
-RESET
-===================
-*/
+
+/* defaults */
+
 *, *:before, *:after {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box; 
 }
 
 * { 
+    font-family: "FiraSans"; 
 }
 
 html, body {
@@ -29,11 +29,7 @@ html, body {
 }
 
 
-
-/* 
-VARIABLES
-===================
-*/
+/* variables */
 :root {
   /* base colors */
   --color-alpha: #333333;
@@ -53,10 +49,61 @@ VARIABLES
   --dim-mega: 60px;
 }
 
-/*
-LAYOUT
-=================
-*/
+
+
+/* type classes */
+a {
+    color: var(--highlight-color, var(--color-brand-blue));
+    text-decoration: none;
+    font-style: italic;
+    /* todo: should be normal, but looks thin.  font issue? */
+    /*font-weight: bold; */
+}
+h1,.alpha   { 
+    font-size: 23px;
+    font-weight: lighter;
+    font-style: italic;
+    line-height: 26px;
+    color: var(--color-gamma);
+    margin: 6px 0 24px 0;
+}
+
+h2,.beta  {
+    font-size: 17px;
+    color: var(--color-gamma);
+    margin: 32px 0 16px 0;
+}
+
+h3,.gamma   { 
+    font-size: 14px;
+    font-style: bold;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: var(--color-gamma);
+    margin: 32px 0 16px 0;
+}
+h4,.delta   { }
+h5,.epsilon { }
+h6,.zeta    { }
+em {
+    font-weight: normal;
+}
+.mega{
+    font-size: 60px;
+    line-height: 60px;
+    font-style: normal;
+}
+.large {
+    font-size: 23px;
+    line-height: 26px;
+}
+.giga{ }
+.kilo{ }
+small, .milli {
+    font-size: 14px;
+}
+
+/* layout classes */
 /* grid */
 .grid {
 }
@@ -69,7 +116,6 @@ LAYOUT
 [class*='col-'] {
   float: left;
 }
-
 .col-1-2 { width: 50%; }    /* 2 col */
 .col-1-3 { width: 33.33%; } /* 3 col */
 .col-2-3 { width: 66.66%; }
@@ -112,6 +158,12 @@ LAYOUT
 .l-pt-micro { padding-top: var(--dim-micro); }
 .l-pb-micro { padding-bottom: var(--dim-micro); }
 
+hr {
+    border: none;
+    background: var(--color-theta);
+    height: 1px;
+    margin: var(--dim-small) 0 var(--dim-small) 0;
+}
 
 /* helpers */
 .l-clearfix:after {
@@ -119,10 +171,12 @@ LAYOUT
     display: table;
     clear: both;
 }
-
 .l-inline-block {
   display: inline-block;
 }
+
+
+
 
 
 
