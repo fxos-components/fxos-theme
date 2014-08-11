@@ -60,15 +60,16 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
     font-size: 25px;
     width: 28px;
     text-align: center;
+    color: var(--color-delta);
 }
 .menu-item .icon-forward {
     /* to do: replace with standard icon sizing variables */
-    font-size: 20px;
+    font-size: 25px;
 }
 .menu-item > a { 
     text-decoration: none;
     font-style: normal;
-    font-weight: normal;
+    
     color: var(--color-gamma);
 }
 
@@ -209,7 +210,7 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
     display: inline-block;
     width: 100%;
     min-height: 40px;
-    border: 1px solid #d6d6d6;
+    border: var(--input-border, 1px solid lightgray);
     position: relative;
 }
 .input {
@@ -220,22 +221,21 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
     border: none;
     padding:  0 var(--dim-small);
     margin: 0;
-    color: var(--color-alpha);
-    background: rgba(255,255,255,0.5);
+    color: var(--input-color, #000);
+    background: var(--input-background, #fff);
 }
 .input::-moz-placeholder {
     font-style: italic;
-    font-weight: lighter;
-    color: #909ca7;
+    color: var(--input-placeholder-color, lightgray);
 }
 .input:focus {
-    background: rgba(255,255,255,1);
+    
 }
 .input:focus~.input-focus {
     transform: scaleX(1);
     transition-delay:  var(--button-transition-delay, 200ms);
+    visibility: visible;
 }
-
 .input:focus~.input-clear {
     opacity: 1;
 }
@@ -243,7 +243,7 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
     position: absolute;
     top: 12px;
     right: 10px;
-    background: #909ca7;
+    background: var(--input-clear-background);
     width: 17px;
     height: 17px;
     border-radius: 50%;
@@ -253,8 +253,8 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
 .input-clear-icon {
     /* to do: replace with standard icon sizing variables */
     font-size: 19px;
-    margin-left: 4px;
-    margin-top: -1px;
+    line-height: 17px;
+    text-align: center;
     display: block;
 }
 .input-focus {
@@ -264,6 +264,7 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
     height: 3px;
     transition: all 200ms;
     transform: scaleX(0);
+    visibility: hidden;
     background: var(--highlight-color, #000);
 }
 .input-search-container {
@@ -278,11 +279,16 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
 }
 .input-range-label {
     font-style: italic;
-    color: var(--highlight-color, #000);
-    font-weight: bold;
+    font-size: font-medium;
+    font-weight: 400;
     text-align: bottom;
     position: relative;
     top: 15px;
+    transition: all 0.2s;
+}
+.input-range-label-active {
+    color: var(--highlight-color, #000);
+    font-size: var(--font-large);
 }
 .input-range-container {
     position:relative;
@@ -351,9 +357,10 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
 .tabs-item {
     text-align: center;
     font-style: italic;
+    font-weight: 300;
     height: 45px;
     line-height: 45px;
-    transition: all 0.2s;
+    transition: color, opacity 0.2s;
     transition-delay:  var(--button-transition-delay, 200ms);
     cursor: pointer;
     flex-grow: 1;
@@ -376,6 +383,7 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
 
 .tabs-item-selected {   
     color: var(--highlight-color, #000);
+    font-weight: 400;
 }
 
 .tabs-selected-indicator {
@@ -386,6 +394,7 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
     height: 3px;
     background: var(--highlight-color, #000);
     transition: all 0.2s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
 
 /* progress */
@@ -445,16 +454,38 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
     animation-delay: 0.3s;
     animation-duration: 0.3s;
 }
+.dialogue-header {
+    margin: 0;
+    color: var(--dialogue-header-color, #000);
+}
+.dialogue-menu {
+    height: 315px;
+    position: relative;
+    overflow: hidden;
+}
+.dialogue-menu-item {
+    color: var(--color-gamma);
+}
+.dialogue-menu-item:after  {
+    background: var(--dialogue-menuitem-border-color, #000);
+}
+.dialogue-menu:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(to bottom, rgba(244, 244, 244, 0),  rgba(244, 244, 255, 1));
+    z-index: 100;
+}
 .dialogue { 
     background: var(--color-iota);
-    max-height: 75%;
+    box-shadow: 0 1px 0 0px rgba(0,0,0,.15);
     max-width: 350px;
     width: 90%;
     margin: auto;  
-}
-.dialogue .menu {
-    max-height: 250px;
-    overflow: hidden;
+    position: relative;
 }
 .dialogue-in {
     opacity: 1;
@@ -464,8 +495,14 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
 }
 .dialogue-out {
     animation-name: fadeOut;
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
     animation-duration: 0.2s;
+    animation-timing-function: linear;
+}
+.banner-out {
+    animation-name: fadeOut;
+    animation-delay: 1s;
+    animation-duration: 0.3s;
     animation-timing-function: linear;
 }
 
@@ -522,7 +559,7 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
 
 .dialogue-button {
     height: 50px;
-    font-weight: lighter;
+    font-weight: 300;
     font-style: italic;
     font-size: var(--font-medium);
     flex-grow: 1;
@@ -530,11 +567,19 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
     border: 0;
     padding: 0rem 25px;
     background:  var(--color-beta);
-    color: var(--color-brand-blue);
+    color: var(--color-epsilon);
     transition: all 0.2;
     transition-delay:  var(--button-transition-delay, 200ms);
     position: relative;
 }
+
+.dialogue-button-primary {
+    color: var(--color-brand-alpha);
+}
+.dialogue-button-warning {
+    color: var(--color-destructive);
+}
+
 .dialogue-button:after {
     content: " ";
     position: absolute;
@@ -560,8 +605,8 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
 
 .dialogue-objectmenu-button {
     text-align: left;
+    color: var(--color-brand-alpha);
 }
-
 
 .dialogue-button-icon {
     /* to do: replace with standard icon sizing variables */
@@ -572,16 +617,22 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
     margin-right: var(--dim-small);
 }
 .dialogue .dialogue-option-selected {
-    color:  var(--color-brand-blue);
-    font-weight: bold;
+    color:  var(--color-brand-alpha);
+    font-weight: 400;
 }
 .dialogue-option-selected-tick {
-    color:  var(--color-brand-blue);
-    font-size: 32px;   
+    color:  var(--color-brand-alpha);
+    font-size: 25px;   
     line-height: 75px;
     margin: -25px 0 -25px 0;
 }
-
+.dialogue-input-container {
+    border: 1px solid var(--dialogue-input-border, #000);
+}
+.dialogue-input-input {
+    color: var(--dialogue-input-color, #000);
+    background: var(--dialogue-input-background, #fff);
+}
 /*
 value selector
 */
@@ -630,14 +681,25 @@ value selector
     position: absolute;
     z-index: 100;
     width: 100%;
-    top: 166px;
+    top: 136px;
 }
 .dialogue-spinner-selected li {
     background: var(--color-beta);
-    color: var(--color-brand-blue);
+    color: var(--color-brand-alpha);
     font-size: 27px;
-    padding: 15px;
-    font-weight: bold;
+    font-weight: 500;
+    height: 50px;
+}
+
+.dialogue-spinner-value {
+    line-height: 50px;
+}
+
+.dialogue-spinner-day-name {
+    margin: 3px;
+    font-size: var(--font-small);
+    font-weight: 400;
+    display: block;
 }
 
 .banner-container {
@@ -655,39 +717,14 @@ value selector
     height: 50px;
     line-height: 50px;
     bottom: 15px;
-    background: var(--color-beta);
+    background: var(--banner-background, #f4f4f4);
+    box-shadow: 0 1px 0 0px rgba(0,0,0,.15);
+    color: var(--highlight-color, #000);
     text-align: center;
-    opacity: 0;
-}
-.banner-animate {
-    animation-name: fadein-out;
-    animation-duration: 3s;
-}
-
-
-@keyframes fadein-out {
-    0% {
-        opacity: 0;
-        transform: translateY(25px);
-    }
-    25% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    80% {
-        opacity: 1;
-    }
-    100% {
-        oapcity: 0;
-    }
+    font-style: italic;
 }
 
 
 
-/*
-todo: active states;
-*/
-.dialogue-button-warning {
-    color: var(--color-brand-orange);
-}
+
 

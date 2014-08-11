@@ -16,6 +16,10 @@ Gaia theme variables
   --color-brand-beta: #00caf2;
   --color-brand-gamma: #b2f2ff;
 
+  --color-warning: #fbbd3c;
+  --color-destructive: #e2443a;
+  --color-preffered: #00ba91;
+
   /* base dimensions */
   --dim-micro: 6px;
   --dim-milli: 12px;
@@ -38,18 +42,34 @@ Gaia theme variables
   --header-button-color: var(--color-alpha);
   --header-title-color: var(--color-alpha);
 
-  --button-background: var(--color-beta);
+  --button-background: var(--color-iota);
   --button-background-active: var(--color-brand-blue);
-  --button-color: var(--color-alpha);
+  --button-color: var(--color-epsilon);
   --button-color-active: var(--color-beta);
   --button-transition: all 0.2s;
   --button-boxshadow: inset 0 -1px 0 #d8d8d8, inset 0 1px 0 #eeeeee;
 
-  --switch-color-checked: var(--color-brand-blue);
-  --switch-color: var(--color-zeta);
+  --switch-handle-color: var(--color-beta);
+  --switch-track-color: var(--color-zeta);
+  --switch-outline-color: var(--color-zeta);
 
-  --checkbox-color: var(--color-brand-blue);
+  --checkbox-border: 2px solid var(--color-zeta);
+  --checkbox-background: var(--color-beta);
 
+  --input-background: var(--color-beta);
+  --input-border: 1px solid var(--color-theta);
+  --input-color: var(--color-alpha);
+  --input-placeholder-color: #909ca7;
+  --input-clear-background: #909ca7;
+
+  --dialogue-header-color: var(--color-epsilon);
+  --dialogue-input-color: var(--color-alpha);
+  --dialogue-input-background: var(--color-beta);
+  --dialogue-input-border: 1px solid var(--color-theta);
+  --dialogue-menuitem-border-color: var(--color-theta);
+  
+  --banner-background: var(--color-iota);
+  
   /* generic styles */
   --highlight-color: #000;
 }
@@ -63,18 +83,14 @@ Gaia theme variables
     /* module styles */
     --header-background: var(--color-brand-orange);
     --header-nav-button-color:  var(--color-beta);
-    --header-nav-button-color-active:   rgba(255,255,255,0.2);
+    --header-nav-button-color-active: rgba(255,255,255,0.2);
     --header-button-color: var(--color-beta);
     --header-button-color-active: rgba(255,255,255,0.2);
     --header-button-background: transparent;
     --header-title-color: var(--color-beta);
 
     --button-background-active: var(--color-brand-orange);
-    --button-color: var(--color-alpha);
     --button-color-active: var(--color-beta);   
-
-    --checkbox-color: var(--color-brand-orange);
-    --switch-color-checked: var(--color-brand-orange);
 }
 
 .theme-communications {
@@ -82,42 +98,37 @@ Gaia theme variables
   --highlight-color: var(--color-brand-turquoise);
   
   /* module styles */
-	--header-background: var(--color-brand-turquoise);
-	--header-nav-button-color: 	var(--color-beta);
-	--header-nav-button-color-active:  rgba(255,255,255,0.2);
-	--header-button-color: #177874;
-	--header-button-color-active: rgba(23,120,116,0.2);
+  --header-background: var(--color-brand-turquoise);
+  --header-nav-button-color:  var(--color-beta);
+  --header-nav-button-color-active:  rgba(255,255,255,0.2);
+  --header-button-color: #177874;
+  --header-button-color-active: rgba(23,120,116,0.2);
   --header-button-background: transparent;
-	--header-title-color: var(--color-beta);
+  --header-title-color: var(--color-beta);
 
-  --button-background: var(--color-beta);
-	--button-background-active: var(--color-brand-turquoise);
-	--button-color: var(--color-alpha);
-	--button-color-active: var(--color-beta);
-  
-  --switch-color-checked: var(--color-brand-turquoise);
-  --switch-color: var(--color-zeta);
-
-  --checkbox-color: var(--color-brand-turquoise);
+  --button-background-active: var(--color-brand-turquoise);
+  --button-color-active: var(--color-beta);
 }
 
 .theme-settings {
   /* generic styles */
   --highlight-color: var(--color-brand-blue);
 
-	/* module styles */
-	--header-background: var(--color-iota);
-	--header-nav-button-color: 	var(--color-alpha);
-	--header-nav-button-color-active: rgba(51,51,51,0.2);
-	--header-button-color: var(--color-brand-blue);
+  /* module styles */
+  --header-background: var(--color-iota);
+  --header-nav-button-color:  var(--color-alpha);
+  --header-nav-button-color-active: rgba(51,51,51,0.2);
+  --header-button-color: var(--color-brand-blue);
   --header-button-background: transparent;  
-	--header-button-color-active: rgba(0,202,242,0.2);
-	--header-title-color: var(--color-alpha);
+  --header-button-color-active: rgba(0,202,242,0.2);
+  --header-title-color: var(--color-alpha);
     
-	--button-background-active: var(--color-brand-blue);
+  --button-background-active: var(--color-brand-blue);
   --button-background: var(--color-beta);
   --button-color-active: var(--color-beta);
 
+  --banner-background: var(--color-beta);
+  
   /* container styles */
   background: var(--color-iota);
 }
@@ -142,9 +153,20 @@ Gaia theme variables
   --button-color-active: var(--color-beta);
   --button-boxshadow: 'none';
   
-  --switch-color: var(--color-delta);
-  --switch-color-checked: var(--color-brand-blue);
+  --switch-handle-color: var(--color-delta);
+  --switch-track-color: #1a1a1a;
+  --switch-outline-color: #1a1a1a;
 
+  --checkbox-border: 2px solid #1a1a1a;
+  --checkbox-background: var(--color-delta);
+
+  --input-background: #2b2b2b;
+  --input-border: 1px solid #4d4d4d;
+  --input-color: var(--color-beta);
+  --input-placeholder-color: var(--color-eta);
+
+  --banner-background: var(--color-gamma);
+  
   /* container styles  */
   color: var(--color-eta);
   background: var(--color-alpha);
@@ -156,12 +178,6 @@ Gaia theme variables
 .theme-media h3, .theme-media .gamma {
     color: #fff;
 }
-.theme-media .subheader-link-label {
-    color: var(--highlight-color);
-}
-.theme-media .subheader-line {
-    background: var(--color-gamma);
-}
 .theme-media .menu-item {
   color: var(--color-eta)
 }
@@ -171,16 +187,16 @@ Gaia theme variables
 .theme-media .menu-item:after {
     background: var(--color-gamma);
 }
-.theme-media .menu-item-selected { 
+.theme-media .subheader-link-label {
+    color: var(--highlight-color);
+}
+.theme-media .subheader-line {
     background: var(--color-gamma);
 }
-.theme-media .input-container {
-    border-color: var(--color-gamma);
+.theme-media .menu-item a {
+    color: inherit;
 }
-.theme-media .input {
-    background: var(--color-alpha);
-}
-.theme-media .input:focus {
+.theme-media .menu-item-selected { 
     background: var(--color-gamma);
 }
 .theme-media .input-range-track {

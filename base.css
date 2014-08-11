@@ -15,7 +15,8 @@ Base styles
 }
 
 * { 
-  font-family: "FiraSans"; 
+  font-family: "Fira Sans"; 
+  font-weight: 300;
 }
 
 html, body {
@@ -24,7 +25,7 @@ html, body {
   height: 100%;
   color: var(--color-epsilon);
   font-weight: normal;
-  line-height: 19px;
+  line-height: 21px;
   font-size: 17px;
 }
 
@@ -61,19 +62,18 @@ a {
 }
 h1,.alpha   { 
     font-size: 23px;
-    font-weight: lighter;
+    font-weight: 200;
     font-style: italic;
     line-height: 26px;
     color: var(--color-gamma);
     margin: 6px 0 24px 0;
 }
-
 h2,.beta  {
     font-size: 17px;
+    font-weight: 400;
     color: var(--color-gamma);
     margin: 32px 0 16px 0;
 }
-
 h3,.gamma   { 
     font-size: 14px;
     font-style: bold;
@@ -86,7 +86,7 @@ h4,.delta   { }
 h5,.epsilon { }
 h6,.zeta    { }
 em {
-    font-weight: normal;
+    font-weight: 500;
 }
 .mega{
     font-size: 60px;
@@ -101,6 +101,13 @@ em {
 .kilo{ }
 small, .milli {
     font-size: 14px;
+    font-weight: 300;
+}
+.font-color-medium {
+  color: var(--color-epsilon);
+}
+.font-color-dark {
+  color: var(--color-alpha);
 }
 
 /* layout classes */
@@ -140,23 +147,32 @@ small, .milli {
 
 /* margin-top */
 .l-mt-small { margin-top: var(--dim-small); }
+.l-mt-med { margin-top: var(--dim-medium); }
 /* margin-bottom */
 .l-mb-small { margin-bottom: var(--dim-small); }
-.l-mb-med {}
+.l-mb-med { margin-bottom: var(--dim-medium); }
 .l-mb-large {}
 .l-mb-mega { margin-bottom: var(--dim-mega); }
 /* margin-left */
 .l-ml-small { margin-left: var(--dim-small); }
 /* margin-right */
 .l-mr-small { margin-right: var(--dim-small); }
+/* margin-auto */
+.l-mlr-auto { margin-left: auto; margin-right: auto; }
+.l-m-auto { margin: auto; }
 /* margin */
 .l-m-small { margin: var(--dim-small); }
+.l-m-med { margin: var(--dim-medium); }
+.l-m-0 { margin: 0 ;}
 /* paddig */
 .l-p-small { padding: var(--dim-small); }
 .l-pl-small { padding-left: var(--dim-small); }
 .l-pr-small { padding-right: var(--dim-small); }
+.l-pb-small { padding-bottom: var(--dim-small); }
+.l-pt-small { padding-top: var(--dim-small); }
 .l-pt-micro { padding-top: var(--dim-micro); }
 .l-pb-micro { padding-bottom: var(--dim-micro); }
+.l-p-0 { padding: 0 ;}
 
 hr {
     border: none;
@@ -178,9 +194,9 @@ hr {
   display: none!important;
 }
 
-
-
-
+.is-invisible {
+  visibility: hidden!important;
+}
 
 
 
