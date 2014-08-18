@@ -56,16 +56,6 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
     animation-duration: 800ms;
     animation-iteration: 1;
 }
-.menu-item-icon {
-    font-size: 25px;
-    width: 28px;
-    text-align: center;
-    color: var(--color-delta);
-}
-.menu-item .icon-forward {
-    /* to do: replace with standard icon sizing variables */
-    font-size: 25px;
-}
 .menu-item > a { 
     text-decoration: none;
     font-style: normal;
@@ -97,8 +87,9 @@ blocking bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1026164
     border-bottom: none;
 }
 .menu-item-icon {
-    font-size: 30px;
     margin: -10px var(--dim-small) -10px 0;
+    color: var(--color-delta);
+    
 }
 .spinner {
     display: inline-block;
