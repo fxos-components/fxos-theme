@@ -142,6 +142,7 @@ Customizable styles?
   --header-button-color: var(--color-brand-blue);
   --header-button-background: transparent;
   --header-button-color-active: rgba(0,202,242,0.2);
+  --header-button-color-disabled: var(--color-eta);
   --header-title-color: var(--color-alpha);
 
 
