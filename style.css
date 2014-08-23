@@ -46,11 +46,38 @@ Gaia theme variables
 
 /* sub-theme specific variables */
 .theme-productivity {
+
+    /** Brand Color
+     ---------------------------------------------------------*/
+
+    --color-brand: var(--color-orange);
+
+    /** Text Color
+     ---------------------------------------------------------*/
+
+    --text-color: var(--color-beta);
+
+    /** Background
+     ---------------------------------------------------------*/
+
+    --background: var(--color-beta);
+
+    /** Links
+     ---------------------------------------------------------*/
+
+    /*--link-color: #177874;*/
+    --color-brand_link-color: var(--color-beta);
+
+    /** Header
+     ---------------------------------------------------------*/
+
+    --header-action-button-color: var(--text-color);
+
     /* generic styles */
-    --highlight-color: var(--color-brand-orange);
+    /*--highlight-color: var(--color-brand-orange);*/
 
     /* module styles */
-    --header-background: var(--color-brand-orange);
+/*    --header-background: var(--color-brand-orange);
     --header-nav-button-color:  var(--color-beta);
     --header-nav-button-color-active: rgba(255,255,255,0.2);
     --header-button-color: var(--color-beta);
@@ -59,15 +86,15 @@ Gaia theme variables
     --header-title-color: var(--color-beta);
 
     --button-background-active: var(--color-brand-orange);
-    --button-color-active: var(--color-beta);
+    --button-color-active: var(--color-beta);*/
 }
 
 .theme-communications {
   /* generic styles */
-  --highlight-color: var(--color-brand-turquoise);
+  /*--highlight-color: var(--color-brand-turquoise);*/
 
   /* module styles */
-  --header-background: var(--color-brand-turquoise);
+/*  --header-background: var(--color-brand-turquoise);
   --header-nav-button-color:  var(--color-beta);
   --header-nav-button-color-active:  rgba(255,255,255,0.2);
   --header-button-color: #177874;
@@ -77,10 +104,46 @@ Gaia theme variables
 
   --button-background-active: var(--color-brand-turquoise);
   --button-color-active: var(--color-beta);
+*/
+  /** Brand Color
+   ---------------------------------------------------------*/
+
+  --color-brand: var(--color-turquoise);
+
+  /** Text Color
+   ---------------------------------------------------------*/
+
+  --text-color: var(--color-beta);
+
+  /** Background
+   ---------------------------------------------------------*/
+
+  --background: var(--color-beta);
+
+  /** Links
+   ---------------------------------------------------------*/
+
+  --link-color: #177874;
+
+  /** Header
+   ---------------------------------------------------------*/
+
+  --header-action-button-color: var(--text-color);
 }
 
 .theme-settings {
-  --color-brand: var(--color-iota);
+  /*--color-brand: var(--color-iota);*/
+
+
+  --base-color: var(--color-iota);
+  --base-color-plus: var(--color-beta);
+  --base-color-minus: var(--color-eta);
+
+  --background: var(--color-iota);
+  --background-plus: var(--color-beta);
+  --background-minus: var(--color-eta);
+
+  --color-highlight: var(--color-blue);
 
   /** Text Color
    ---------------------------------------------------------*/
@@ -91,22 +154,24 @@ Gaia theme variables
    * color-brand
    */
 
-  --color-brand-text-color: var(--color-epsilon);
+/*  --color-brand-text-color: var(--color-epsilon);
   --color-brand-text-color-link: var(--color-blue);
   --color-brand-text-color-link-active: var(--color-blue);
-  --color-brand-text-opacity-link-active: 0.2;
+  --color-brand-text-opacity-link-active: 0.2;*/
 
   /**
    * background
    */
 
-  --background: var(--color-brand);
-  --background-text-color: var(--brand-color);
-  --background-text-color-link: var(--brand-color);
-  --background-text-color-link-active: var(--brand-color);
-  --background-text-opacity-link-active-: var(--brand-color);
 
-  /** Link Color
+
+/*  --background_text-color: var(--brand-color);
+
+  --background_link-color: var(--brand-color);
+  --background_link-color-active: var(--brand-color);
+  --background_link-opacity-active-: var(--brand-color);*/
+
+  /** Links
    ---------------------------------------------------------*/
 
   --link-color: var(--color-blue);
@@ -114,30 +179,36 @@ Gaia theme variables
   --link-color-active: var(--link-color);
   --link-color-focus: var(--link-color);
 
+  /*--link-opacity: 1;*/
+  --link-opacity-active: 0.2;
+  --link-opacity-disabled: 0.5;
+
   /** Titles
    ---------------------------------------------------------*/
 
   --title-color: var(--color-epsilon);
 
-  /**
-   * background
-   */
-
-  --background-title-color: var(--color-epsilon);
-
-  /**
-   * color-brand
-   */
-
-  --brand-color-title-color: var(--color-epsilon);
-
   /** Buttons
    ---------------------------------------------------------*/
+
+/*  --button-color: transparent;
+  --button-color-hover: transparent;
+  --button-color-active: transparent;
+  --button-color-focus: transparent;
+
+  --button-box-shadow: none;
+  --button-box-shadow-hover: none;
+  --button-box-shadow-active: none;
+  --button-box-shadow-focus: none;
 
   --button-background: transparent;
   --button-background-hover: transparent;
   --button-background-active: transparent;
-  --button-background-focused: transparent;
+  --button-background-focused: transparent;*/
+
+  /**
+   *
+   */
 
   /** Header
    ---------------------------------------------------------*/
@@ -153,17 +224,15 @@ Gaia theme variables
 
   --text-color: var(--color-beta);
 
-  /**
-   * background
-   */
+  /** Background
+   ---------------------------------------------------------*/
 
   --background: var(--color-alpha);
 
-  /** Link Color
+  /** Links
    ---------------------------------------------------------*/
 
   --link-color: var(--color-blue);
-
 
   /** Header
    ---------------------------------------------------------*/
