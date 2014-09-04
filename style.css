@@ -6,16 +6,17 @@ Gaia theme variables
 :root {
   /* brand colors */
   --color-brand-darkblue: #00539f;
-  --color-brand-blue: #00caf2;
+  --color-brand-blue: #0095dd;
   --color-brand-turquoise: #27c8c2;
   --color-brand-darkorange: #e66000;
   --color-brand-orange: #ff9500;
   --color-brand-yellow: #ffcb00;
   --color-brand-violet: #c40c84;
+  /* highlight */
   --color-brand-alpha: #00aac5;
   --color-brand-beta: #00caf2;
   --color-brand-gamma: #b2f2ff;
-
+  /* functional */
   --color-warning: #fbbd3c;
   --color-destructive: #e2443a;
   --color-preffered: #00ba91;
