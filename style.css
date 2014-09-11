@@ -72,6 +72,7 @@ Gaia theme variables
   
   /* generic styles */
   --highlight-color: #000;
+  --border-color: var(--color-theta);
 }
 
 
@@ -100,7 +101,7 @@ Gaia theme variables
   /* module styles */
   --header-background: var(--color-brand-turquoise);
   --header-nav-button-color:  var(--color-beta);
-  --header-nav-button-color-active:  rgba(255,255,255,0.2);
+  --header-nav-button-color-active: rgba(255,255,255,0.2);
   --header-button-color: #177874;
   --header-button-color-active: rgba(23,120,116,0.2);
   --header-button-background: transparent;
