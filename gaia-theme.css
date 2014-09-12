@@ -50,7 +50,7 @@ Gaia theme variables
     /** Brand Color
      ---------------------------------------------------------*/
 
-    --color-brand: var(--color-orange);
+    --highlight-color: var(--color-orange);
 
     /** Text Color
      ---------------------------------------------------------*/
@@ -108,17 +108,12 @@ Gaia theme variables
   /** Brand Color
    ---------------------------------------------------------*/
 
-  --color-brand: var(--color-turquoise);
+  --highlight-color: var(--color-turquoise);
 
   /** Text Color
    ---------------------------------------------------------*/
 
   --text-color: var(--color-beta);
-
-  /** Background
-   ---------------------------------------------------------*/
-
-  --background: var(--color-beta);
 
   /** Links
    ---------------------------------------------------------*/
@@ -142,13 +137,19 @@ Gaia theme variables
   --background: var(--color-iota);
   --background-plus: var(--color-beta);
   --background-minus: var(--color-eta);
+  --background-minus-minus: var(--color-zeta);
 
-  --color-highlight: var(--color-blue);
+  --highlight-color: var(--color-blue);
 
   /** Text Color
    ---------------------------------------------------------*/
 
   --text-color: var(--color-gamma);
+
+  /** Borders
+   ---------------------------------------------------------*/
+
+  --border-color: var(--color-theta);
 
   /**
    * color-brand
@@ -191,6 +192,14 @@ Gaia theme variables
   /** Buttons
    ---------------------------------------------------------*/
 
+  /** Inputs
+   ---------------------------------------------------------*/
+
+  --input-background: var(--color-beta);
+  /*--input-border-color: var(--color-theta);*/
+  --input-color: var(--color-alpha);
+  --input-clear-background: #909ca7;
+
 /*  --button-color: transparent;
   --button-color-hover: transparent;
   --button-color-active: transparent;
@@ -206,9 +215,15 @@ Gaia theme variables
   --button-background-active: transparent;
   --button-background-focused: transparent;*/
 
-  /**
-   *
-   */
+  /** Switch
+   ---------------------------------------------------------*/
+
+  --switch-background: var(--background-minus-minus);
+
+  /** Checkbox
+   ---------------------------------------------------------*/
+
+  --checkbox-border-color: var(--background-minus-minus);
 
   /** Header
    ---------------------------------------------------------*/
@@ -216,8 +231,12 @@ Gaia theme variables
   --header-action-button-color: var(--title-color);
 }
 
-
 .theme-media {
+
+  /** Highlight Color
+   ---------------------------------------------------------*/
+
+  --highlight-color: var(--color-blue);
 
   /** Text Color
    ---------------------------------------------------------*/
@@ -228,6 +247,9 @@ Gaia theme variables
    ---------------------------------------------------------*/
 
   --background: var(--color-alpha);
+  --background-plus: var(--color-gamma);
+  --background-minus: #2B2B2B;
+  --background-minus-minus: #1a1a1a;
 
   /** Links
    ---------------------------------------------------------*/
@@ -238,4 +260,30 @@ Gaia theme variables
    ---------------------------------------------------------*/
 
   --header-action-button-color: var(--text-color);
+
+  /** Borders
+   ---------------------------------------------------------*/
+
+  --border-color: var(--color-gamma);
+
+  /** Inputs
+   ---------------------------------------------------------*/
+
+  --input-background: var(--background-minus);
+
+  /** Switch
+   ---------------------------------------------------------*/
+
+  --switch-head-border-color: var(--background-minus-minus);
+  --switch-background: var(--background-minus-minus);
+
+  /** Checkbox
+   ---------------------------------------------------------*/
+
+  --checkbox-border-color: var(--background-minus-minus);
+
+  /** Buttons
+   ---------------------------------------------------------*/
+
+  /*--button-background: var(--background-plus);*/
 }
