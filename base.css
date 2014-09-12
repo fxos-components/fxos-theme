@@ -11,23 +11,24 @@ Base styles
 
 *, *:before, *:after {
   /* apply a natural box layout model to all elements */
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-* { 
-  font-family: "Fira Sans"; 
+/** {
+  font-family: "FiraSans";
   font-weight: 300;
-}
+}*/
 
-html, body {
+/*html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   color: var(--color-epsilon);
-  font-weight: normal;
+  /*font-weight: normal;*/
   line-height: 21px;
   font-size: 17px;
-}
+}*/
 
 
 /* variables */
@@ -60,7 +61,7 @@ a {
     /* todo: should be normal, but looks thin.  font issue? */
     /*font-weight: bold; */
 }
-h1,.alpha   { 
+h1,.alpha   {
     font-size: 23px;
     font-weight: 200;
     font-style: italic;
@@ -74,7 +75,7 @@ h2,.beta  {
     color: var(--color-gamma);
     margin: 32px 0 16px 0;
 }
-h3,.gamma   { 
+h3,.gamma   {
     font-size: 14px;
     font-style: bold;
     text-transform: uppercase;
@@ -114,7 +115,7 @@ small, .milli {
 /* grid */
 .grid {
 }
-.grid:after { 
+.grid:after {
   /* clearfix */
   content: "";
   display: table;
