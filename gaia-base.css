@@ -177,6 +177,10 @@ em {
 .l-p-small { padding: var(--dim-small); }
 .l-pl-small { padding-left: var(--dim-small); }
 .l-pr-small { padding-right: var(--dim-small); }
+.l-plr-small {
+  padding-right: var(--dim-small);
+  padding-left: var(--dim-small);
+}
 .l-pb-small { padding-bottom: var(--dim-small); }
 .l-pt-small { padding-top: var(--dim-small); }
 .l-pt-mega { padding-top: var(--dim-mega); }
