@@ -69,8 +69,6 @@ Gaia theme variables
   --button-box-shadow:
     inset 0 -1px 0 #d8d8d8,
     inset 0 1px 0 #eeeeee;
-
-
   --button-box-shadow-active: var(--button-box-shadow);
 }
 
@@ -117,7 +115,7 @@ Gaia theme variables
 
   --background: var(--color-iota);
   --background-plus: var(--color-beta);
-  --background-minus: var(--color-eta);
+  --background-minus: var(--color-epsilon);
   --background-minus-minus: var(--color-zeta);
 
   /** Highlight
@@ -133,7 +131,7 @@ Gaia theme variables
   /** Titles
    ---------------------------------------------------------*/
 
-  --title-color: var(--color-epsilon);
+  --title-color: var(--background-minus);
 
   /** Buttons
    ---------------------------------------------------------*/
@@ -154,7 +152,7 @@ Gaia theme variables
    ---------------------------------------------------------*/
 
   --header-button-color: var(--highlight-color);
-  --header-action-button-color: var(--color-epsilon);
+  --header-action-button-color: var(--background-minus);
 }
 
 .theme-media {
