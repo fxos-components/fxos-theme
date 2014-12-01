@@ -40,6 +40,11 @@ Gaia theme variables
   --background-plus: var(--color-theta);
   --background-minus: var(--color-zeta);
 
+  /** Borders
+   ---------------------------------------------------------*/
+
+  --border-color: var(--color-theta);
+
   /** Text Color
    ---------------------------------------------------------*/
 
