@@ -138,6 +138,11 @@ Gaia theme variables
 
   --border-color: var(--color-theta);
 
+  /** Text Color
+   ---------------------------------------------------------*/
+
+  --text-color: var(--color-gamma);
+
   /** Titles
    ---------------------------------------------------------*/
 
