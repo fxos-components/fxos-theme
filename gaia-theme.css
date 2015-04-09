@@ -80,6 +80,11 @@ Gaia theme variables
    ---------------------------------------------------------*/
 
   --header-disabled-button-color: rgba(255,255,255,0.3);
+
+  /** Transitions
+   ---------------------------------------------------------*/
+
+  --transition-duration: 0.2s;
 }
 
 
