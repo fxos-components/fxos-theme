@@ -1,7 +1,7 @@
 {
   "name": "gaia-theme",
   "version": "0.5.1",
-  "homepage": "https://github.com/gaia-components/gaia-theme",
+  "homepage": "https://github.com/fxos-components/gaia-theme",
   "authors": [
     "Wilson Page <wilsonpage@me.com>"
   ],
@@ -17,10 +17,10 @@
     "README.md"
   ],
   "devDependencies": {
-    "gaia-icons": "gaia-components/gaia-icons",
-    "gaia-header": "gaia-components/gaia-header",
-    "gaia-button": "gaia-components/gaia-button",
-    "gaia-switch": "gaia-components/gaia-switch",
-    "gaia-checkbox": "gaia-components/gaia-checkbox"
+    "gaia-icons": "fxos-components/gaia-icons",
+    "gaia-header": "fxos-components/gaia-header",
+    "gaia-button": "fxos-components/gaia-button",
+    "gaia-switch": "fxos-components/gaia-switch",
+    "gaia-checkbox": "fxos-components/gaia-checkbox"
   }
 }
