@@ -1,0 +1,17 @@
+{
+  "name": "gaia-theme",
+  "version": "1.0.0",
+  "description": "A collection of css-variables to style fxos-components and apps",
+  "main": "gaia-theme.css",
+  "author": "Wilson Page <wilsonpage@me.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fxos-components/gaia-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fxos-components/gaia-theme/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
