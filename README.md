@@ -1,10 +1,10 @@
-# &lt;fxos-switch&gt; ![](https://travis-ci.org/fxos-components/fxos-switch.svg)
-
 ## Installation
 
 ```bash
-$ npm install fxos-switch
+$ npm install fxos-theme
 ```
+
+## Usage
 
 ```html
 <link rel="stylesheet" href="node_modules/fxos-theme/fxos-theme.css">
