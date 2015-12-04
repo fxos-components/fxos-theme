@@ -1,7 +1,6 @@
 {
-  "name": "gaia-theme",
-  "version": "0.5.1",
-  "homepage": "https://github.com/fxos-components/gaia-theme",
+  "name": "fxos-theme",
+  "homepage": "https://github.com/fxos-components/fxos-theme",
   "authors": [
     "Wilson Page <wilsonpage@me.com>"
   ],
