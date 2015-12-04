@@ -78,8 +78,8 @@ html {
  * Productivity
  */
 
-.theme-productivity,
-.theme-communications {
+.fxos-theme-productivity,
+.fxos-theme-communications {
 
   /* backgrounds */
   --fxos-background: white;
@@ -117,7 +117,7 @@ html {
  * Communications
  */
 
-.theme-communications {
+.fxos-theme-communications {
   --fxos-brand-color: var(--fxos-color-turquoise);
 }
 
@@ -125,7 +125,7 @@ html {
  * Media
  */
 
-.theme-media {
+.fxos-theme-media {
 
   /* backgrounds */
   --fxos-background: var(--fxos-color-grey-9);
