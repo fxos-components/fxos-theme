@@ -99,7 +99,6 @@ html {
   --fxos-header-background: var(--fxos-brand-color);
 
   /* fxos-button */
-  --fxos-button-color: var(--fxos-color);
   --fxos-button-background: var(--fxos-color-grey-2);
 
   /* fxos-switch */
@@ -111,6 +110,9 @@ html {
 
   /* fxos-dialog */
   --fxos-dialog-background: rgba(199,199,199,0.85);
+
+  /* fxos-toast */
+  --fxos-toast-background: var(--fxos-color-grey-2);
 }
 
 /**
@@ -161,4 +163,7 @@ html {
 
   /* fxos-dialog */
   --fxos-dialog-background: rgba(199,199,199,0.5);
+
+  /* fxos-toast */
+  --fxos-toast-background: var(--fxos-background-plus);
 }
