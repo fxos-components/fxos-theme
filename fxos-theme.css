@@ -56,6 +56,16 @@ html {
   /* fxos-button */
   --fxos-button-background: var(--fxos-background-plus);
 
+  /* fxos-header */
+  --fxos-header-color: var(--fxos-color-grey-6);
+  --fxos-header-icon-color: var(--fxos-color-grey-6);
+  --fxos-header-button-color: var(--fxos-color-blue);
+  --fxos-header-disabled-color: var(--fxos-color-grey-4);
+
+  /* fxos-text-input */
+  --fxos-text-input-background: var(--fxos-background-plus);
+  --fxos-text-input-placeholder-color: var(--fxos-color-minus);
+
   /* fxos-switch */
   --fxos-switch-background: var(--fxos-background-minus-minus);
   --fxos-switch-handle-background: var(--fxos-background-plus);
@@ -63,15 +73,6 @@ html {
   /* fxos-checkbox */
   --fxos-checkbox-border-color: var(--fxos-background-minus-minus);
   --fxos-checkbox-background: var(--fxos-background-plus);
-
-  /* fxos-header */
-  --fxos-header-color: var(--fxos-title-color);
-  --fxos-header-button-color: var(--fxos-brand-color);
-  --fxos-header-disabled-color: var(--fxos-color-grey-4);
-
-  /* fxos-text-input */
-  --fxos-text-input-background: var(--fxos-background-plus);
-  --fxos-text-input-placeholder-color: var(--fxos-color-minus);
 }
 
 /**
@@ -96,7 +97,7 @@ html {
   --fxos-header-icon-color: white;
   --fxos-header-button-color: white;
   --fxos-header-disabled-color: rgba(255,255,255,0.3);
-  --fxos-header-background: var(--fxos-brand-color);
+  --fxos-header-background: var(--fxos-color-orange);
 
   /* fxos-button */
   --fxos-button-background: var(--fxos-color-grey-2);
@@ -121,6 +122,7 @@ html {
 
 .fxos-theme-communications {
   --fxos-brand-color: var(--fxos-color-turquoise);
+  --fxos-header-background: var(--fxos-color-turquoise);
 }
 
 /**
@@ -142,7 +144,9 @@ html {
   --fxos-title-color: var(--fxos-color);
 
   /* fxos-header */
-  --fxos-header-button-color: var(--fxos-brand-color);
+  --fxos-header-color: var(--fxos-color);
+  --fxos-header-icon-color: white;
+  --fxos-header-button-color: var(--fxos-color-blue);
   --fxos-header-action-button-color: var(--fxos-color);
   --fxos-header-disabled-color: rgba(255,255,255,0.3);
 
@@ -155,7 +159,7 @@ html {
   --fxos-switch-handle-background: var(--fxos-background-plus);
 
   /* fxos-button */
-  --fxos-button-background: var(--fxos-background-plus);
+  --fxos-button-background: var(--fxos-color-grey-8);
   --fxos-button-box-shadow: none;
 
   /* fxos-text-input */
